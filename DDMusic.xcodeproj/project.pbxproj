@@ -1,0 +1,497 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		305700DD1E1CAEED000B55F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305700DC1E1CAEED000B55F9 /* AppDelegate.swift */; };
+		305700E21E1CAEED000B55F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 305700E01E1CAEED000B55F9 /* Main.storyboard */; };
+		305700E41E1CAEED000B55F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 305700E31E1CAEED000B55F9 /* Assets.xcassets */; };
+		305700E71E1CAEED000B55F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 305700E51E1CAEED000B55F9 /* LaunchScreen.storyboard */; };
+		305700F41E1CAF85000B55F9 /* Musics.plist in Resources */ = {isa = PBXBuildFile; fileRef = 305700F31E1CAF85000B55F9 /* Musics.plist */; };
+		305701181E1CAFA8000B55F9 /* mmd.png in Resources */ = {isa = PBXBuildFile; fileRef = 305700F61E1CAFA8000B55F9 /* mmd.png */; };
+		305701191E1CAFA8000B55F9 /* photo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 305700F71E1CAFA8000B55F9 /* photo.jpeg */; };
+		3057011A1E1CAFA8000B55F9 /* photo.png in Resources */ = {isa = PBXBuildFile; fileRef = 305700F81E1CAFA8000B55F9 /* photo.png */; };
+		3057011B1E1CAFA8000B55F9 /* timg.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 305700F91E1CAFA8000B55F9 /* timg.jpeg */; };
+		305701271E1CAFA8000B55F9 /* 唐人.lrc in Resources */ = {isa = PBXBuildFile; fileRef = 305701111E1CAFA8000B55F9 /* 唐人.lrc */; };
+		305701281E1CAFA8000B55F9 /* 残酷月光.lrc in Resources */ = {isa = PBXBuildFile; fileRef = 305701121E1CAFA8000B55F9 /* 残酷月光.lrc */; };
+		305701291E1CAFA8000B55F9 /* 演员.lrc in Resources */ = {isa = PBXBuildFile; fileRef = 305701131E1CAFA8000B55F9 /* 演员.lrc */; };
+		3057012A1E1CAFA8000B55F9 /* 孙子涵 - 唐人.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 305701151E1CAFA8000B55F9 /* 孙子涵 - 唐人.mp3 */; };
+		3057012B1E1CAFA8000B55F9 /* 林宥嘉-残酷月光.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 305701161E1CAFA8000B55F9 /* 林宥嘉-残酷月光.mp3 */; };
+		3057012C1E1CAFA8000B55F9 /* 薛之谦 - 演员.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 305701171E1CAFA8000B55F9 /* 薛之谦 - 演员.mp3 */; };
+		305701381E1CB229000B55F9 /* MusicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305701371E1CB229000B55F9 /* MusicModel.swift */; };
+		3057013A1E1CBE3F000B55F9 /* MusicListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305701391E1CBE3F000B55F9 /* MusicListVC.swift */; };
+		3057013C1E1CBFD5000B55F9 /* MusicListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3057013B1E1CBFD5000B55F9 /* MusicListCell.xib */; };
+		3057013E1E1CBFD9000B55F9 /* MusicListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3057013D1E1CBFD9000B55F9 /* MusicListCell.swift */; };
+		305701411E1CC12D000B55F9 /* UIView+Extesion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305701401E1CC12D000B55F9 /* UIView+Extesion.swift */; };
+		305701431E1CC1B9000B55F9 /* MusicDataTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305701421E1CC1B9000B55F9 /* MusicDataTool.swift */; };
+		305701451E1CC251000B55F9 /* LrcModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305701441E1CC251000B55F9 /* LrcModel.swift */; };
+		305701471E1CC2A1000B55F9 /* TimeTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305701461E1CC2A1000B55F9 /* TimeTool.swift */; };
+		305701491E1CEBC0000B55F9 /* MusicOperationTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305701481E1CEBC0000B55F9 /* MusicOperationTool.swift */; };
+		3057014B1E1CEC03000B55F9 /* MusicTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3057014A1E1CEC03000B55F9 /* MusicTool.swift */; };
+		3057014D1E1CEC44000B55F9 /* MusicMessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3057014C1E1CEC44000B55F9 /* MusicMessageModel.swift */; };
+		3057014F1E1CECBF000B55F9 /* LrcAddImageTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3057014E1E1CECBF000B55F9 /* LrcAddImageTool.swift */; };
+		305701521E1CED4B000B55F9 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305701501E1CED4B000B55F9 /* DetailVC.swift */; };
+		305701531E1CED4B000B55F9 /* LrcTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305701511E1CED4B000B55F9 /* LrcTVC.swift */; };
+		305701571E1CED8C000B55F9 /* LrcLable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305701541E1CED8C000B55F9 /* LrcLable.swift */; };
+		305701581E1CED8C000B55F9 /* LrcTCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305701551E1CED8C000B55F9 /* LrcTCell.swift */; };
+		305701591E1CED8C000B55F9 /* LrcTCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 305701561E1CED8C000B55F9 /* LrcTCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		305700D91E1CAEED000B55F9 /* DDMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DDMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		305700DC1E1CAEED000B55F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		305700E11E1CAEED000B55F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		305700E31E1CAEED000B55F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		305700E61E1CAEED000B55F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		305700E81E1CAEED000B55F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		305700F31E1CAF85000B55F9 /* Musics.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Musics.plist; sourceTree = "<group>"; };
+		305700F61E1CAFA8000B55F9 /* mmd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mmd.png; sourceTree = "<group>"; };
+		305700F71E1CAFA8000B55F9 /* photo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo.jpeg; sourceTree = "<group>"; };
+		305700F81E1CAFA8000B55F9 /* photo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photo.png; sourceTree = "<group>"; };
+		305700F91E1CAFA8000B55F9 /* timg.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = timg.jpeg; sourceTree = "<group>"; };
+		305701111E1CAFA8000B55F9 /* 唐人.lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "唐人.lrc"; sourceTree = "<group>"; };
+		305701121E1CAFA8000B55F9 /* 残酷月光.lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "残酷月光.lrc"; sourceTree = "<group>"; };
+		305701131E1CAFA8000B55F9 /* 演员.lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "演员.lrc"; sourceTree = "<group>"; };
+		305701151E1CAFA8000B55F9 /* 孙子涵 - 唐人.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "孙子涵 - 唐人.mp3"; sourceTree = "<group>"; };
+		305701161E1CAFA8000B55F9 /* 林宥嘉-残酷月光.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "林宥嘉-残酷月光.mp3"; sourceTree = "<group>"; };
+		305701171E1CAFA8000B55F9 /* 薛之谦 - 演员.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "薛之谦 - 演员.mp3"; sourceTree = "<group>"; };
+		305701371E1CB229000B55F9 /* MusicModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicModel.swift; sourceTree = "<group>"; };
+		305701391E1CBE3F000B55F9 /* MusicListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicListVC.swift; sourceTree = "<group>"; };
+		3057013B1E1CBFD5000B55F9 /* MusicListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MusicListCell.xib; sourceTree = "<group>"; };
+		3057013D1E1CBFD9000B55F9 /* MusicListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicListCell.swift; sourceTree = "<group>"; };
+		305701401E1CC12D000B55F9 /* UIView+Extesion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extesion.swift"; sourceTree = "<group>"; };
+		305701421E1CC1B9000B55F9 /* MusicDataTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicDataTool.swift; sourceTree = "<group>"; };
+		305701441E1CC251000B55F9 /* LrcModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LrcModel.swift; sourceTree = "<group>"; };
+		305701461E1CC2A1000B55F9 /* TimeTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeTool.swift; sourceTree = "<group>"; };
+		305701481E1CEBC0000B55F9 /* MusicOperationTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicOperationTool.swift; sourceTree = "<group>"; };
+		3057014A1E1CEC03000B55F9 /* MusicTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicTool.swift; sourceTree = "<group>"; };
+		3057014C1E1CEC44000B55F9 /* MusicMessageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicMessageModel.swift; sourceTree = "<group>"; };
+		3057014E1E1CECBF000B55F9 /* LrcAddImageTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LrcAddImageTool.swift; sourceTree = "<group>"; };
+		305701501E1CED4B000B55F9 /* DetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
+		305701511E1CED4B000B55F9 /* LrcTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LrcTVC.swift; sourceTree = "<group>"; };
+		305701541E1CED8C000B55F9 /* LrcLable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LrcLable.swift; sourceTree = "<group>"; };
+		305701551E1CED8C000B55F9 /* LrcTCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LrcTCell.swift; sourceTree = "<group>"; };
+		305701561E1CED8C000B55F9 /* LrcTCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LrcTCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		305700D61E1CAEED000B55F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		305700D01E1CAEED000B55F9 = {
+			isa = PBXGroup;
+			children = (
+				305700DB1E1CAEED000B55F9 /* DDMusic */,
+				305700DA1E1CAEED000B55F9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		305700DA1E1CAEED000B55F9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				305700D91E1CAEED000B55F9 /* DDMusic.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		305700DB1E1CAEED000B55F9 /* DDMusic */ = {
+			isa = PBXGroup;
+			children = (
+				3057013F1E1CC103000B55F9 /* Tools */,
+				305701361E1CB217000B55F9 /* Model */,
+				305700F21E1CAF4F000B55F9 /* Resource */,
+				305700F11E1CAF23000B55F9 /* Application */,
+				305700F01E1CAF1F000B55F9 /* ViewModel */,
+				305700EF1E1CAF18000B55F9 /* View */,
+				305700EE1E1CAF12000B55F9 /* Controller */,
+				305700E31E1CAEED000B55F9 /* Assets.xcassets */,
+			);
+			path = DDMusic;
+			sourceTree = "<group>";
+		};
+		305700EE1E1CAF12000B55F9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				305701501E1CED4B000B55F9 /* DetailVC.swift */,
+				305701511E1CED4B000B55F9 /* LrcTVC.swift */,
+				305701391E1CBE3F000B55F9 /* MusicListVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		305700EF1E1CAF18000B55F9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				305701541E1CED8C000B55F9 /* LrcLable.swift */,
+				305701551E1CED8C000B55F9 /* LrcTCell.swift */,
+				305701561E1CED8C000B55F9 /* LrcTCell.xib */,
+				3057013D1E1CBFD9000B55F9 /* MusicListCell.swift */,
+				3057013B1E1CBFD5000B55F9 /* MusicListCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		305700F01E1CAF1F000B55F9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		305700F11E1CAF23000B55F9 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				305700E81E1CAEED000B55F9 /* Info.plist */,
+				305700E51E1CAEED000B55F9 /* LaunchScreen.storyboard */,
+				305700DC1E1CAEED000B55F9 /* AppDelegate.swift */,
+				305700E01E1CAEED000B55F9 /* Main.storyboard */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		305700F21E1CAF4F000B55F9 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				305700F51E1CAFA8000B55F9 /* Images */,
+				305701101E1CAFA8000B55F9 /* Lrcs */,
+				305701141E1CAFA8000B55F9 /* MP3s */,
+				305700F31E1CAF85000B55F9 /* Musics.plist */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		305700F51E1CAFA8000B55F9 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				305700F61E1CAFA8000B55F9 /* mmd.png */,
+				305700F71E1CAFA8000B55F9 /* photo.jpeg */,
+				305700F81E1CAFA8000B55F9 /* photo.png */,
+				305700F91E1CAFA8000B55F9 /* timg.jpeg */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		305701101E1CAFA8000B55F9 /* Lrcs */ = {
+			isa = PBXGroup;
+			children = (
+				305701111E1CAFA8000B55F9 /* 唐人.lrc */,
+				305701121E1CAFA8000B55F9 /* 残酷月光.lrc */,
+				305701131E1CAFA8000B55F9 /* 演员.lrc */,
+			);
+			path = Lrcs;
+			sourceTree = "<group>";
+		};
+		305701141E1CAFA8000B55F9 /* MP3s */ = {
+			isa = PBXGroup;
+			children = (
+				305701151E1CAFA8000B55F9 /* 孙子涵 - 唐人.mp3 */,
+				305701161E1CAFA8000B55F9 /* 林宥嘉-残酷月光.mp3 */,
+				305701171E1CAFA8000B55F9 /* 薛之谦 - 演员.mp3 */,
+			);
+			path = MP3s;
+			sourceTree = "<group>";
+		};
+		305701361E1CB217000B55F9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				305701371E1CB229000B55F9 /* MusicModel.swift */,
+				305701441E1CC251000B55F9 /* LrcModel.swift */,
+				3057014C1E1CEC44000B55F9 /* MusicMessageModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3057013F1E1CC103000B55F9 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				305701421E1CC1B9000B55F9 /* MusicDataTool.swift */,
+				305701401E1CC12D000B55F9 /* UIView+Extesion.swift */,
+				305701461E1CC2A1000B55F9 /* TimeTool.swift */,
+				305701481E1CEBC0000B55F9 /* MusicOperationTool.swift */,
+				3057014A1E1CEC03000B55F9 /* MusicTool.swift */,
+				3057014E1E1CECBF000B55F9 /* LrcAddImageTool.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		305700D81E1CAEED000B55F9 /* DDMusic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 305700EB1E1CAEED000B55F9 /* Build configuration list for PBXNativeTarget "DDMusic" */;
+			buildPhases = (
+				305700D51E1CAEED000B55F9 /* Sources */,
+				305700D61E1CAEED000B55F9 /* Frameworks */,
+				305700D71E1CAEED000B55F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DDMusic;
+			productName = DDMusic;
+			productReference = 305700D91E1CAEED000B55F9 /* DDMusic.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		305700D11E1CAEED000B55F9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = majianjie;
+				TargetAttributes = {
+					305700D81E1CAEED000B55F9 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = CSPDBDZ5FD;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 305700D41E1CAEED000B55F9 /* Build configuration list for PBXProject "DDMusic" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 305700D01E1CAEED000B55F9;
+			productRefGroup = 305700DA1E1CAEED000B55F9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				305700D81E1CAEED000B55F9 /* DDMusic */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		305700D71E1CAEED000B55F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3057011A1E1CAFA8000B55F9 /* photo.png in Resources */,
+				305701191E1CAFA8000B55F9 /* photo.jpeg in Resources */,
+				305700E71E1CAEED000B55F9 /* LaunchScreen.storyboard in Resources */,
+				3057012C1E1CAFA8000B55F9 /* 薛之谦 - 演员.mp3 in Resources */,
+				305701291E1CAFA8000B55F9 /* 演员.lrc in Resources */,
+				305700E41E1CAEED000B55F9 /* Assets.xcassets in Resources */,
+				305701591E1CED8C000B55F9 /* LrcTCell.xib in Resources */,
+				305701271E1CAFA8000B55F9 /* 唐人.lrc in Resources */,
+				3057012B1E1CAFA8000B55F9 /* 林宥嘉-残酷月光.mp3 in Resources */,
+				305701181E1CAFA8000B55F9 /* mmd.png in Resources */,
+				3057013C1E1CBFD5000B55F9 /* MusicListCell.xib in Resources */,
+				305700F41E1CAF85000B55F9 /* Musics.plist in Resources */,
+				305701281E1CAFA8000B55F9 /* 残酷月光.lrc in Resources */,
+				3057011B1E1CAFA8000B55F9 /* timg.jpeg in Resources */,
+				3057012A1E1CAFA8000B55F9 /* 孙子涵 - 唐人.mp3 in Resources */,
+				305700E21E1CAEED000B55F9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		305700D51E1CAEED000B55F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3057014F1E1CECBF000B55F9 /* LrcAddImageTool.swift in Sources */,
+				3057014D1E1CEC44000B55F9 /* MusicMessageModel.swift in Sources */,
+				305701521E1CED4B000B55F9 /* DetailVC.swift in Sources */,
+				305701411E1CC12D000B55F9 /* UIView+Extesion.swift in Sources */,
+				3057014B1E1CEC03000B55F9 /* MusicTool.swift in Sources */,
+				305700DD1E1CAEED000B55F9 /* AppDelegate.swift in Sources */,
+				305701531E1CED4B000B55F9 /* LrcTVC.swift in Sources */,
+				305701451E1CC251000B55F9 /* LrcModel.swift in Sources */,
+				3057013E1E1CBFD9000B55F9 /* MusicListCell.swift in Sources */,
+				305701491E1CEBC0000B55F9 /* MusicOperationTool.swift in Sources */,
+				305701581E1CED8C000B55F9 /* LrcTCell.swift in Sources */,
+				305701431E1CC1B9000B55F9 /* MusicDataTool.swift in Sources */,
+				3057013A1E1CBE3F000B55F9 /* MusicListVC.swift in Sources */,
+				305701471E1CC2A1000B55F9 /* TimeTool.swift in Sources */,
+				305701571E1CED8C000B55F9 /* LrcLable.swift in Sources */,
+				305701381E1CB229000B55F9 /* MusicModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		305700E01E1CAEED000B55F9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				305700E11E1CAEED000B55F9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		305700E51E1CAEED000B55F9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				305700E61E1CAEED000B55F9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		305700E91E1CAEED000B55F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		305700EA1E1CAEED000B55F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		305700EC1E1CAEED000B55F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = CSPDBDZ5FD;
+				INFOPLIST_FILE = DDMusic/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ddtv.DDMusic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		305700ED1E1CAEED000B55F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = CSPDBDZ5FD;
+				INFOPLIST_FILE = DDMusic/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ddtv.DDMusic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		305700D41E1CAEED000B55F9 /* Build configuration list for PBXProject "DDMusic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				305700E91E1CAEED000B55F9 /* Debug */,
+				305700EA1E1CAEED000B55F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		305700EB1E1CAEED000B55F9 /* Build configuration list for PBXNativeTarget "DDMusic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				305700EC1E1CAEED000B55F9 /* Debug */,
+				305700ED1E1CAEED000B55F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 305700D11E1CAEED000B55F9 /* Project object */;
+}
