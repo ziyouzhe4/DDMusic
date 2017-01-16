@@ -6,9 +6,7 @@ class LrcLable: UILabel {
 
     var radion : CGFloat = 0 {
         didSet {
-           // if radion == oldValue {
-             //   return
-            //}
+          
             setNeedsDisplay()
         }
     }

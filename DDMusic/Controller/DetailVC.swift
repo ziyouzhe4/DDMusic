@@ -39,7 +39,8 @@ class DetailVC: UIViewController {
     var timer : Timer?
     /* 界面返回方法 */
     @IBAction func backButton(_ sender: AnyObject) {
-        self.navigationController?.popViewController(animated: true)
+        _ = self.navigationController?.popViewController(animated: true)
+        
     }
     /* 开始播放 */
     @IBAction func playOrPause(_ sender: AnyObject) {
@@ -122,7 +123,7 @@ extension DetailVC {
     }
     func progressSliderValue(str : UISlider) {
         
-         let tine =  MusicOperationTool.shareInstance.tool.player?.currentTime
+         _ =  MusicOperationTool.shareInstance.tool.player?.currentTime
         let rotate = str.value
         print(rotate)
     }

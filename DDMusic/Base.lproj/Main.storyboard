@@ -71,7 +71,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oye-5u-eGb">
                                 <rect key="frame" x="0.0" y="120" width="375" height="427"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="aWw-Io-aM3">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aWw-Io-aM3">
                                         <rect key="frame" x="75" y="101" width="225" height="225"/>
                                     </imageView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eja-eu-2yq">
@@ -255,7 +255,6 @@
         <image name="mmd" width="16" height="16"/>
         <image name="nextSinger" width="32" height="32"/>
         <image name="pause" width="32" height="32"/>
-        <image name="photo.jpg" width="16" height="16"/>
         <image name="play" width="32" height="32"/>
         <image name="timg.jpeg" width="300" height="399"/>
         <image name="upSinger" width="32" height="32"/>
