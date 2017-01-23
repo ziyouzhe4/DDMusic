@@ -79,7 +79,7 @@ class DetailVC: UIViewController {
 
 //界面
 extension DetailVC {
-    /* scrollerView设置大小 */
+    /* scrollerView设置大小  向左滑动显示全部的歌词 */
     func setUpScrollerView(frame : CGRect) {
         lrcScrollView.contentSize = CGSize(width: frame.width * 2, height: 0)
     }
@@ -92,7 +92,7 @@ extension DetailVC {
         lrcScrollView.showsHorizontalScrollIndicator = false
         lrcScrollView.delegate = self
     }
-    /* View设置 创建一次 约束可能是多次 */
+    /** 设置歌词显示的view */
     func setUpLrcView() {
         let frame = lrcScrollView.bounds
         lrcVC.tableView.frame = frame
@@ -116,6 +116,7 @@ extension DetailVC {
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
+    
     func chargePlayingStatus() {
         let bool = (MusicOperationTool.shareInstance.tool.player?.isPlaying)! as Bool
         self.playButton.isSelected = bool
@@ -127,7 +128,7 @@ extension DetailVC {
         let rotate = str.value
         print(rotate)
     }
-    
+    // MARK:- 滑动和点击滑块的事件
     func touchProgressSlider(str: UISlider) {
         print("开始点击")
        self.progressSlider.value = str.value
@@ -150,10 +151,12 @@ extension DetailVC {
         /* 设置歌词进度 */
         if lrcM.model != nil {
             let  time1 =  (message.costTime - lrcM.model!.beginTime)
-            let time2 = lrcM.model!.endTime - lrcM.model!.beginTime
+            let  time2 = lrcM.model!.endTime - lrcM.model!.beginTime
             lrcLabel.radion = CGFloat(time1 / time2)
             lrcVC.progressLrc = lrcLabel.radion
         }
+        
+        //一直监听屏幕的刷新,如果锁屏后 就会走锁屏的代码
         let status = UIApplication.shared.applicationState
         if status == .background {
             MusicOperationTool.shareInstance.setUpLocakMessage()
@@ -211,10 +214,12 @@ extension DetailVC : UIScrollViewDelegate {
     /* 暂停旋转动画 */
     func pauseForeImageViewAnimation() -> () {
 //        self.foreImageView.layer.pauseAnimation()
+//        self.foreImageView.stopAnimating()
     }
     
     func resumeForeImageViewAnimation() -> () {
 //        self.foreImageView.layer.resumeAnimation()
+//        self.foreImageView.startAnimating()
     }
 }
 /* 数据赋值 */
@@ -229,7 +234,9 @@ extension DetailVC {
         }
         
         if message.modelM?.singerIcon != nil {
-            backImageView.image = UIImage(named: (message.modelM?.singerIcon)!)
+//            backImageView.image = UIImage(named: (message.modelM?.singerIcon)!)
+            backImageView.image = UIImage(named: "login_register_background")
+
             /* 展示的图片 1*/
             foreImageView.image = UIImage(named: (message.modelM?.singerIcon)!)
         }
@@ -279,6 +286,7 @@ extension DetailVC {
         timer = nil
     }
     
+    //CADisplayLink是一个能让我们以和屏幕刷新率相同的频率将内容画到屏幕上的定时器。我们在应用中创建一个新的 CADisplayLink 对象，把它添加到一个runloop中，并给它提供一个 target 和selector 在屏幕刷新的时候调用
     func addDisplayLink() -> () {
         updateLrcLink = CADisplayLink(target: self, selector: #selector(updateLrc))
         updateLrcLink?.add(to: RunLoop.current, forMode: .commonModes)
@@ -289,7 +297,7 @@ extension DetailVC {
         updateLrcLink = nil
     }
 }
-/*  */
+/*  锁屏后接收到的事件 */
 extension DetailVC {
     override func remoteControlReceived(with event: UIEvent?) {
         let type = event?.subtype

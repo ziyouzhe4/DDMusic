@@ -43,12 +43,6 @@ class LrcTVC: UITableViewController {
         super.viewWillLayoutSubviews()
         tableView.contentInset = UIEdgeInsets(top: tableView.height / 2, left: 0, bottom: tableView.height / 2, right: 0)
     }
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-    // MARK: - Table view data source
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return lrcMs.count

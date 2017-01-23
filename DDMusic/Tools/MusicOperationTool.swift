@@ -2,7 +2,7 @@
 
 import UIKit
 import MediaPlayer
-/* 音乐操作队列工具 */
+/* 音乐操作工具 */
 
 class MusicOperationTool: NSObject {
 
@@ -16,6 +16,7 @@ class MusicOperationTool: NSObject {
     var lastLrcRow = -1
     var musicModel : MusicMessageModel = MusicMessageModel()
     
+    //锁屏时候获取的信息
     func getMusicMessage() ->MusicMessageModel {
         musicModel.modelM = musicsM[currentPlayMusicIndex]
         musicModel.costTime = (tool.player?.currentTime) ?? 0
@@ -28,7 +29,6 @@ class MusicOperationTool: NSObject {
     
     var currentPlayMusicIndex = -1 {
         didSet {
-            
             if currentPlayMusicIndex < 0 {
                 currentPlayMusicIndex = musicsM.count - 1
             }
@@ -73,7 +73,7 @@ class MusicOperationTool: NSObject {
         let model = musicsM[currentPlayMusicIndex]
         playMusic(musics: model)
     }
-    /* 设置播放比例是多少 */
+    /* 设置播放比例是多少 界面滑块滑动或者点击时候触发 */
     func setPlayerPlayRotate(progress : CGFloat) {
         if tool.getCurrnetPlayerPlayRotate() == progress {
             return

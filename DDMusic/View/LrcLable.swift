@@ -6,7 +6,6 @@ class LrcLable: UILabel {
 
     var radion : CGFloat = 0 {
         didSet {
-          
             setNeedsDisplay()
         }
     }
